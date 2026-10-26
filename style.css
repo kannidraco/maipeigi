@@ -69,7 +69,7 @@ header {
   max-width: 1200px;
 }
 
-/* ================= ESTUDANTES ================= */
+/* ================= ALUNOS EM DESTAQUE ================= */
 .estudante {
   background-color: #faae43;
   padding: 24px 0;
@@ -82,9 +82,10 @@ header {
 
 .estudantes_todos {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px;
+  padding-bottom: 24px;
 }
 
 .estudante-div {
@@ -94,15 +95,14 @@ header {
 
 .estudante-imagem {
   width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .estudante-nome {
   text-align: center;
-}
-
-.estudante-icone {
-  width: 38px;
-  padding: 4px 8px;
+  padding-top: 8px;
 }
 
 /* ================= RODAPÉ ================= */
@@ -165,7 +165,6 @@ header {
   }
 
   .estudantes_todos {
-    flex-direction: column;
-    align-items: center;
+    gap: 16px;
   }
 }
